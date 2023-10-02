@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+	<head>
+		<meta charset="UTF-8">
+		<title>Ch07::index</title>
+	</head>
+	<body>
+		<h3>Ch07.Spring Boot 실습</h3>
+			
+		<h4>Thymeleaf 기본출력</h4>
+		<p>str 1 : [[${str1}]]</p> 
+		<p th:text="${str2}">내용출력</p> <!-- 속성갑 주는듯? -->
+		<p th:text="${user1}">내용출력</p>
+		<p th:text="${user2}">내용출력</p>
+		<p th:text="${user4}">내용출력</p>
+		
+		<h4>Thymeleaf 조건문</h4>
+		<p>
+			<span th:if="${user1.name=='홍길동'}">user1은 홍길동 입니다.</span>
+			<span th:if="${user1.name=='김유신'}">user1은 김유신 입니다.</span>			
+		</p>
+		<p>
+			<span th:if="${user2}">user2는 참</span> 
+			<span th:unless="${user2}">user2 는 거짓</span> <!--else if -->
+		</p>
+		<p>
+			<span th:if="${user4}">user4는 참</span> 
+			<span th:unless="${user4}">user4 는 거짓</span> <!--else if -->
+		</p>
+
+		
+		
+		<h4>Thymeleaf 반복문</h4>
+		<table border="1">
+			<tr>
+				<th>아이디</th>
+				<th>이름</th>
+				<th>휴대폰</th>
+				<th>나이</th>
+			</tr>
+			<tr th:each="user:${users}">
+				<td th:text="${user.uid}">아이디</td>
+				<td th:text="${user.name}">이름</td>
+				<td>[[${user.hp}]]</td>
+				<td>[[${user.name}]]</td>
+			</tr>
+		</table>
+		
+		
+		<h4>Thymeleaf 링크</h4>
+		<a href="@{/include}">include 실습</a>
+		<a href="@{/layout}">layout 실습</a>
+	
+	</body>
+</html>

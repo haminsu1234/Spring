@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+	<head>
+		<meta charset="UTF-8">
+		<title>Ch07::layout</title>
+	</head>
+	<body>
+		<h3>타임리프 include</h3>
+		
+		<h4>include</h4>
+		<th:block th:include="/fragment/_header.html"/><!-- 가상태그 -->
+		<main>
+			<h3>main include</h3>
+		</main>
+		<th:block th:include="/fragment/_footer.html"/>
+		<hr>
+		
+		<h4>insert </h4>
+		<div th:insert="/fragment/_header.html"></div> <!-- 가상태그랑 결과는 같은데 devtools 보면 가상태그는 tools 에서 발견안되고 insert replace 는 나타남  -->
+		<main>
+			<h3>main include</h3>
+		</main>
+		<div th:insert="/fragment/_footer.html"></div>
+		
+		<hr>
+		
+		<h4>replace</h4>
+		<div th:replace="/fragment/_header.html"></div>
+		<main>
+			<h3>main include</h3>
+		</main>
+		<div th:replace="/fragment/_footer.html"></div>
+		
+		
+	</body>
+</html>
