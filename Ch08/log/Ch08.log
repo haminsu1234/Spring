@@ -1,0 +1,66 @@
+2023-10-04T08:51:53.418+09:00  INFO 2096 --- [restartedMain] kr.ch08.Ch08Application                  : Starting Ch08Application using Java 17.0.8.1 with PID 2096 (C:\Users\Java\Desktop\Workspace\Spring\Ch08\target\classes started by Java in C:\Users\Java\Desktop\Workspace\Spring\Ch08)
+2023-10-04T08:51:53.422+09:00  INFO 2096 --- [restartedMain] kr.ch08.Ch08Application                  : No active profile set, falling back to 1 default profile: "default"
+2023-10-04T08:51:53.448+09:00  INFO 2096 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2023-10-04T08:51:53.449+09:00  INFO 2096 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2023-10-04T08:51:53.790+09:00  INFO 2096 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-10-04T08:51:53.820+09:00  INFO 2096 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 25 ms. Found 1 JPA repository interfaces.
+2023-10-04T08:51:54.150+09:00  INFO 2096 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2023-10-04T08:51:54.157+09:00  INFO 2096 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-10-04T08:51:54.157+09:00  INFO 2096 --- [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.13]
+2023-10-04T08:51:54.194+09:00  INFO 2096 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/Ch08]   : Initializing Spring embedded WebApplicationContext
+2023-10-04T08:51:54.195+09:00  INFO 2096 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 746 ms
+2023-10-04T08:51:54.280+09:00  INFO 2096 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-10-04T08:51:54.316+09:00  INFO 2096 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.2.9.Final
+2023-10-04T08:51:54.317+09:00  INFO 2096 --- [restartedMain] org.hibernate.cfg.Environment            : HHH000406: Using bytecode reflection optimizer
+2023-10-04T08:51:54.403+09:00  INFO 2096 --- [restartedMain] o.h.b.i.BytecodeProviderInitiator        : HHH000021: Bytecode provider name : bytebuddy
+2023-10-04T08:51:54.471+09:00  INFO 2096 --- [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2023-10-04T08:51:54.483+09:00  INFO 2096 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2023-10-04T08:51:54.802+09:00  INFO 2096 --- [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@1be4e7db
+2023-10-04T08:51:54.804+09:00  INFO 2096 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2023-10-04T08:51:54.881+09:00  WARN 2096 --- [restartedMain] org.hibernate.orm.deprecation            : HHH90000026: MySQL57Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
+2023-10-04T08:51:54.986+09:00  INFO 2096 --- [restartedMain] o.h.b.i.BytecodeProviderInitiator        : HHH000021: Bytecode provider name : bytebuddy
+2023-10-04T08:51:55.357+09:00  INFO 2096 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-10-04T08:51:55.455+09:00  INFO 2096 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-10-04T08:51:55.670+09:00  INFO 2096 --- [restartedMain] o.s.d.j.r.query.QueryEnhancerFactory     : Hibernate is in classpath; If applicable, HQL parser will be used.
+2023-10-04T08:51:55.948+09:00  WARN 2096 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-10-04T08:51:56.043+09:00  INFO 2096 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2023-10-04T08:51:56.176+09:00  INFO 2096 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2023-10-04T08:51:56.199+09:00  INFO 2096 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path '/Ch08'
+2023-10-04T08:51:56.205+09:00  INFO 2096 --- [restartedMain] kr.ch08.Ch08Application                  : Started Ch08Application in 3.0 seconds (process running for 3.373)
+2023-10-04T08:52:07.088+09:00  INFO 2096 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/Ch08]   : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-10-04T08:52:07.089+09:00  INFO 2096 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2023-10-04T08:52:07.089+09:00  INFO 2096 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 0 ms
+2023-10-04T08:56:20.814+09:00  INFO 2096 --- [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 4 class path changes (0 additions, 0 deletions, 4 modifications)
+2023-10-04T08:56:20.822+09:00  INFO 2096 --- [Thread-5] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2023-10-04T08:56:20.824+09:00  INFO 2096 --- [Thread-5] o.a.c.c.C.[Tomcat].[localhost].[/Ch08]   : Destroying Spring FrameworkServlet 'dispatcherServlet'
+2023-10-04T08:56:20.832+09:00  INFO 2096 --- [Thread-5] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-10-04T08:56:20.834+09:00  INFO 2096 --- [Thread-5] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2023-10-04T08:56:20.937+09:00  INFO 2096 --- [Thread-5] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2023-10-04T08:56:20.985+09:00  INFO 2096 --- [restartedMain] kr.ch08.Ch08Application                  : Starting Ch08Application using Java 17.0.8.1 with PID 2096 (C:\Users\Java\Desktop\Workspace\Spring\Ch08\target\classes started by Java in C:\Users\Java\Desktop\Workspace\Spring\Ch08)
+2023-10-04T08:56:20.985+09:00  INFO 2096 --- [restartedMain] kr.ch08.Ch08Application                  : No active profile set, falling back to 1 default profile: "default"
+2023-10-04T08:56:21.047+09:00  INFO 2096 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-10-04T08:56:21.051+09:00  INFO 2096 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 3 ms. Found 1 JPA repository interfaces.
+2023-10-04T08:56:21.088+09:00  INFO 2096 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2023-10-04T08:56:21.089+09:00  INFO 2096 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-10-04T08:56:21.089+09:00  INFO 2096 --- [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.13]
+2023-10-04T08:56:21.095+09:00  INFO 2096 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/Ch08]   : Initializing Spring embedded WebApplicationContext
+2023-10-04T08:56:21.095+09:00  INFO 2096 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 109 ms
+2023-10-04T08:56:21.109+09:00  INFO 2096 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-10-04T08:56:21.111+09:00  INFO 2096 --- [restartedMain] o.h.b.i.BytecodeProviderInitiator        : HHH000021: Bytecode provider name : bytebuddy
+2023-10-04T08:56:21.112+09:00  INFO 2096 --- [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2023-10-04T08:56:21.112+09:00  INFO 2096 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Starting...
+2023-10-04T08:56:21.229+09:00  INFO 2096 --- [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-2 - Added connection com.mysql.cj.jdbc.ConnectionImpl@49921ea
+2023-10-04T08:56:21.229+09:00  INFO 2096 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Start completed.
+2023-10-04T08:56:21.230+09:00  WARN 2096 --- [restartedMain] org.hibernate.orm.deprecation            : HHH90000026: MySQL57Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
+2023-10-04T08:56:21.234+09:00  INFO 2096 --- [restartedMain] o.h.b.i.BytecodeProviderInitiator        : HHH000021: Bytecode provider name : bytebuddy
+2023-10-04T08:56:21.248+09:00  INFO 2096 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-10-04T08:56:21.277+09:00  INFO 2096 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-10-04T08:56:21.339+09:00  WARN 2096 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-10-04T08:56:21.354+09:00  INFO 2096 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2023-10-04T08:56:21.376+09:00  INFO 2096 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2023-10-04T08:56:21.381+09:00  INFO 2096 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path '/Ch08'
+2023-10-04T08:56:21.383+09:00  INFO 2096 --- [restartedMain] kr.ch08.Ch08Application                  : Started Ch08Application in 0.409 seconds (process running for 268.551)
+2023-10-04T08:56:21.384+09:00  INFO 2096 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2023-10-04T08:56:24.205+09:00  INFO 2096 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/Ch08]   : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-10-04T08:56:24.205+09:00  INFO 2096 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2023-10-04T08:56:24.206+09:00  INFO 2096 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
