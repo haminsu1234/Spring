@@ -5,12 +5,12 @@ import kr.co.sboard.controller.entity.ArticleEntity;
 import kr.co.sboard.dto.ArticleDTO;
 import kr.co.sboard.service.ArticelService;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.data.domain.Page;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
-
-import java.util.List;
+import org.springframework.web.bind.annotation.RequestParam;
 
 @Controller
 public class ArticleController {
@@ -18,9 +18,12 @@ public class ArticleController {
     @Autowired
     private ArticelService service;
     @GetMapping("/article/list")
-    public String list(Model model){
+    public String list(/*@PathVariable("cate") */String cate, @RequestParam(defaultValue = "1") int pg, Model model ){
 
-        List<ArticleEntity> articles = service.selectArticles();
+
+        String useyn="Y";
+
+        Page<ArticleEntity> articles = service.selectArticles2(useyn,0,pg,cate);
         model.addAttribute("articles",articles);
         return "/article/list";
     }

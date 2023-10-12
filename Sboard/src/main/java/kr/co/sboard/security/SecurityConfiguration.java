@@ -54,7 +54,8 @@ public class SecurityConfiguration {
 										.requestMatchers("/article/**").hasAnyRole("ADMIN","MANAGER","USER")
 										.requestMatchers("/user/**").permitAll()
 										.requestMatchers("/vendor/**", "/js/**", "/dist/**", "/data/**", "/less/**").permitAll()
-						)
+
+				)
 				.build();
 				
 				

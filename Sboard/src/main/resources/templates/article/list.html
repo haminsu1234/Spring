@@ -20,7 +20,7 @@
                                     </tr>
                                     </thead>
                                     <tbody>
-                                    <tr th:each="article : ${articles}">
+                                    <tr th:each="article : ${articles.content}">
                                         <td th:text="${article.no}"></td>
                                         <td th:text="${article.title}"></td>
                                         <td th:text="${article.writer}"></td>
@@ -38,5 +38,25 @@
                     <div class="text-right">
                         <a th:href="@{/article/register}" class="btn btn-primary">글쓰기</a>
                     </div>
+                    <div class="text-center">
+                        <ul class="pagination">
+
+
+                            <li th:if="${articles.hasPrevious}" class="paginate_button previous" aria-controls="dataTables-example" tabindex="0" id="dataTables-example_previous">
+                                <a href="@{/article/list(cate=free,pg=${pg-1})}">이전</a>
+                                <a href="@{/article/list(cate=free,pg=1)}">처음</a>
+                            </li>
+
+                            <th:block th:each="num: ${#numbers.sequence(1,articles.totalPages)}"><!-- 토탈페이지가 있으면 라스트 스타트도있나?-->
+                            <li class="paginate_button " aria-controls="dataTables-example" tabindex="0"><a th:href="@{/article/list(cate=free,pg=${num})}">[[${num}]]</a></li>
+                            </th:block>
+
+                            <li th:if="${articles.hasNext}" class="paginate_button next" aria-controls="dataTables-example" tabindex="0" id="dataTables-example_next">
+                                <a href="@{/article/list(cate=free,pg=${pg+1})}">Next</a>
+                                <a href="@{/article/list(cate=free,pg=${articles.isLast})}">마지막으로</a>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
+
 </html>
