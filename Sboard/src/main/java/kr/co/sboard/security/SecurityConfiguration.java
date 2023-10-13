@@ -33,7 +33,7 @@ public class SecurityConfiguration {
 
 				.formLogin( l -> l
 						.loginPage("/user/login")
-						.defaultSuccessUrl("/",true)
+						.defaultSuccessUrl("/article/list",true)
 						.failureUrl("/user/login?success=100")
 						.usernameParameter("uid")
 						.passwordParameter("pass")

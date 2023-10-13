@@ -3,8 +3,10 @@ package kr.co.sboard.controller;
 import org.springframework.security.core.Authentication;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.ResponseBody;
 
 @Controller
+@ResponseBody
 public class MainController {
 
 
@@ -12,9 +14,9 @@ public class MainController {
     public String index(Authentication authentication){
 
         if(authentication.isAuthenticated()){
-            return "forward:/article/list";
+            return "forword:/article/list";
         }else {
-            return "forward:/user/login";
+            return "forword:/user/login";
         }
 
     }

@@ -12,7 +12,7 @@ public interface ArticleRepository extends JpaRepository<ArticleEntity, Integer>
     //@Query("SELECT a FROM ArticleEntity a WHERE a.useyn = : and cate ='notice' and parent =0 order by `no` DESC limit 1 ,10")
     //public List<ArticleEntity> selectArticleByUseynAndCateAndParent();
 
-    public Page<ArticleEntity> findByUseynAndParent(String useyn, int parent , Pageable pageable);
+    public Page<ArticleEntity> findByUseynAndParentAndCate(String useyn, int parent ,String cate ,Pageable pageable);
 
 
 }
